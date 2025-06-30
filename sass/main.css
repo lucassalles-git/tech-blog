@@ -52,7 +52,7 @@ button {
 }
 
 main {
-  padding: clamp(4rem, 11vw, 5rem) 1.5rem;
+  padding: clamp(4rem, 11vw, 5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,5 +138,8 @@ aside article h3, aside article p {
   aside {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
+  }
+  aside h2 {
+    margin-bottom: 4.563rem;
   }
 }/*# sourceMappingURL=main.css.map */
