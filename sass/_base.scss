@@ -18,8 +18,9 @@ $roboto: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
-body, button {
-    font-family: $roboto;
+body,
+button {
+  font-family: $roboto;
 }
 
 .cabecalho {
@@ -35,35 +36,34 @@ body, button {
 
   .titulo {
     h1 {
-        font-size: clamp(1.5rem, 4.167vw, 2.5rem);
-        font-weight: 600;
-        line-height: 120%;
+      font-size: clamp(1.5rem, 4.167vw, 2.5rem);
+      font-weight: 600;
+      line-height: 120%;
 
-        span {
-            color: $brand-color;
-        }
+      span {
+        color: $brand-color;
+      }
     }
 
     p {
-        margin: 1.5rem 0;
+      margin: 1.5rem 0;
 
-        line-height: 150%;
-        font-size: clamp(1rem, 2.61vw, 1.5rem);
-
+      line-height: 150%;
+      font-size: clamp(1rem, 2.61vw, 1.5rem);
     }
 
     button {
-        width: 100%;
-        height: 2.75rem;
+      width: 100%;
+      height: 2.75rem;
 
-        border: none;
-        border-radius: 0.25rem;
-        background-color: $brand-color;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: $brand-color;
 
-        text-transform: uppercase;
-        font-size: clamp(0.875rem, 3vw, 1.125rem);
-        font-weight: 700;
-        color: $dark-60;
+      text-transform: uppercase;
+      font-size: clamp(0.875rem, 3vw, 1.125rem);
+      font-weight: 700;
+      color: $dark-60;
     }
   }
 
@@ -73,4 +73,64 @@ body, button {
   }
 }
 
-/*w 214 h 49*/
+main {
+  padding: clamp(4rem, 11vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  gap: 2rem;
+  h2 {
+    margin-bottom: 0.5rem;
+
+    font-size: clamp(1.5rem, 3.7vw, 2rem);
+    font-weight: 600;
+  }
+
+  article {
+    width: clamp(20.438rem, 44.4vw, 24rem);
+    
+    border: 2px solid $dark-40;
+    border-radius: 0.36rem;
+
+    img {
+      width: 100%;
+      height: 10.938rem;
+      border-radius: 0.25rem 0.25rem 0 0;
+    }
+
+    div {
+      padding: 1.5rem 1.125rem;
+    }
+
+    h3 {
+      margin-bottom: 0.75rem;
+
+      font-size: clamp(1.125rem, 2vw, 1.25rem);
+      font-weight: 600;
+      line-height: 130%;
+    }
+
+    p {
+      font-size: clamp(0.875rem, 1vw, 1.125rem);
+      line-height: 150%;
+    }
+
+    h3, p {
+      width: clamp(18.188rem, 39.33vw, 21.1rem);
+      display: -webkit-box; /*cria uma caixa com limite de linhas*/
+      -webkit-line-clamp: 2; /*quantas linhas quero que mostre na caixa*/
+      -webkit-box-orient: vertical; /*faz a caixa crescer verticalmente*/
+
+      overflow: hidden; /*esconde o que passar do limite de linhas*/
+      text-overflow: ellipsis; /*coloca ... se o texto passar do limite*/
+    }
+  }
+}
+
+/*14 18*/

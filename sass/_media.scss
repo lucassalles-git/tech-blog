@@ -10,17 +10,30 @@
       }
     }
   }
+
+  aside {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+
+    .linguagem {
+      grid-column: 1;
+    }
+
+    article {
+      margin-top: 1rem;
+    }
+  }
 }
 
 /*Desktop*/
 
-@media (min-width: 64rem) {
+@media (min-width: 77.688rem) {
   .cabecalho {
     padding: 3.125rem;
 
     flex-direction: row;
     justify-content: space-evenly;
-
 
     .titulo {
       width: 36.313rem;
@@ -29,5 +42,9 @@
       text-align: start;
     }
   }
-}
 
+  aside {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+}
