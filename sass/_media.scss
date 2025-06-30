@@ -1,0 +1,33 @@
+/*Tablet*/
+@media (min-width: 44.438rem) {
+  .cabecalho {
+    .titulo {
+      padding: 0 8rem;
+
+      button {
+        width: 13.375rem;
+        height: 3.063rem;
+      }
+    }
+  }
+}
+
+/*Desktop*/
+
+@media (min-width: 64rem) {
+  .cabecalho {
+    padding: 3.125rem;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    .titulo {
+      width: 36.313rem;
+      padding: 0;
+
+      text-align: start;
+    }
+  }
+}
+

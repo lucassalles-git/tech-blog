@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*Paleta de cores*/
+/*Fontes*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+  padding: 4rem 1.5rem;
+  background-color: #f8f8ff;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.cabecalho .titulo h1 {
+  font-size: clamp(1.5rem, 4.167vw, 2.5rem);
+  font-weight: 600;
+  line-height: 120%;
+}
+.cabecalho .titulo h1 span {
+  color: #846aff;
+}
+.cabecalho .titulo p {
+  margin: 1.5rem 0;
+  line-height: 150%;
+  font-size: clamp(1rem, 2.61vw, 1.5rem);
+}
+.cabecalho .titulo button {
+  width: 100%;
+  height: 2.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #846aff;
+  text-transform: uppercase;
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+  font-weight: 700;
+  color: #ffffff;
+}
+.cabecalho .logo {
+  width: clamp(12.938rem, 1.43rem + 40vw, 25rem);
+  height: auto;
+}
+
+/*w 214 h 49*/
+/*Tablet*/
+@media (min-width: 44.438rem) {
+  .cabecalho .titulo {
+    padding: 0 8rem;
+  }
+  .cabecalho .titulo button {
+    width: 13.375rem;
+    height: 3.063rem;
+  }
+}
+/*Desktop*/
+@media (min-width: 64rem) {
+  .cabecalho {
+    padding: 3.125rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .cabecalho .titulo {
+    width: 36.313rem;
+    padding: 0;
+    text-align: start;
+  }
+}/*# sourceMappingURL=main.css.map */
