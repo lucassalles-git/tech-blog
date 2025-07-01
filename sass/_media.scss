@@ -11,6 +11,8 @@
     }
   }
 
+  
+
   aside {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -22,6 +24,18 @@
 
     article {
       margin-top: 1rem;
+    }
+  }
+}
+
+/*Entre tablet e desktop*/
+
+@media (min-width: 55.313rem) {
+  .contato {
+    align-items: center;
+
+    form {
+      max-width: 37rem
     }
   }
 }
@@ -50,5 +64,12 @@
     h2 {
       margin-bottom: 4.563rem;
     }
+  }
+
+  .contato {
+    align-items: center;
+      h2 {
+        font-size: 2rem;
+      }
   }
 }
